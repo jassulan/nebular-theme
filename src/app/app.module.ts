@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbSidebarModule, NbButtonModule, NbThemeModule, NbLayoutModule } from '@nebular/theme';
+import { NbChatModule, NbSidebarModule, NbButtonModule, NbThemeModule, NbLayoutModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { ChatboxComponent } from './chatbox/chatbox.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChatboxComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +21,8 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     NbLayoutModule,
     NbEvaIconsModule,
     NbButtonModule,
-    NbSidebarModule.forRoot(), //if this is your app.module
+    NbSidebarModule.forRoot(),
+    NbChatModule
   ],
   providers: [],
   bootstrap: [AppComponent]

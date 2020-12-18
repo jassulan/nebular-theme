@@ -1,0 +1,200 @@
+::ng-deep nb-layout-column {
+    display: flex;
+    justify-content: center;
+  }
+  :host {
+    display: flex;
+  }
+  nb-chat {
+    width: 300px;
+    margin: 1rem;
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Button used to open the chat form - fixed at the bottom of the page */
+  .open-button {
+    background-color: #42A0D1;
+    color: white;
+    padding: 1.1111vw 1.3888vw;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 1.5972vw;
+    right: 1.9444vw;
+    width: 19.4444vw;
+  }
+  
+  .chat-btn{
+      position: fixed;
+      right:50px;
+      bottom: 50px;
+      background: dodgerblue;
+      color: white;
+      width:60px;
+      height: 60px;
+      border-radius: 50%;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+      box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+  }
+  
+  #assistance {
+    margin: 1.5vw;
+    height: 4vw;
+    font-size: 1.3vw;
+    line-height: 4vw;
+    background-color:  #42A0D1;
+    color: white;
+    text-align: center;
+  }
+  
+  h2{
+    margin: 1.5vw;
+    height: 2vw;
+    font-size: 1vw;
+    line-height: 2vw;
+    background-color: #42A0D1;
+  }
+  
+  
+  nb-chat {
+    width: 20.8333vw;
+    font-size: 1.5vw;
+    margin: 1.5vw;
+    color: #707070;
+  }
+  
+  
+  /* Add styles to the form container */
+  .form-container {
+    margin: 1.5vw;
+    max-width: 20.8333vw;
+    background-color: white;
+  }
+  
+  .form-container button{
+    margin-bottom: 1vw;
+    height: 2.5vw;
+    font-size: 1.3vw;
+    line-height: 2.5vw;
+    color: white;
+    width: 100%;
+    background-color: #707070;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    padding-top: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    height: 11vw;
+    width: 100%;
+    background:rgb(250, 245, 245);
+    color: #707070;
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+    resize: none;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: rgb(250, 245, 245);
+    outline: none;
+  }
+  
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  
+  ::ng-deep nb-layout-column {
+    justify-content: center;
+    display: flex;
+  }
+  
+  
+  section{
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+      padding: 0 1rem;
+  }
+  
+  .chat-popup{
+      display: none;
+      position: fixed;
+      bottom:80px;
+      right:120px;
+      height: 450px;
+      width: 380px;
+      z-index: 9;
+  
+      /* display: flex; */
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0.75rem;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+      border-radius: 10px;
+  }
+  
+  .chat-area{
+      height: 80%;
+      overflow-y: auto;
+      overflow-x: hidden;
+  }
+  
+  .income-msg{
+      display: flex;
+      align-items: center;
+  }
+  
+  .income-msg .msg{
+      background-color: dodgerblue;
+      color: white;
+      padding:0.5rem;
+      border-radius: 25px;
+      margin-left: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+  }
+  
+  
+  .badge{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      color:white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top:-10px;
+      right: -10px;
+  }
+  
+  .input-area{
+      position: relative;
+      display: flex;
+      justify-content: center;
+  }
+  
+  input[type="text"]{
+      width:100%;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      border-radius: 5px;
+      height: 2.2rem;
+  }
+  
