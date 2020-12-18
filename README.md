@@ -1,5 +1,7 @@
 # nebular-theme
 
-ng add @nebular/theme
+Project created to explore features of nebular-theme.
+https://akveo.github.io/nebular/
 
-Project created to explore features of nebular-theme
+It is additional theme for Angular project
+ng add @nebular/theme
